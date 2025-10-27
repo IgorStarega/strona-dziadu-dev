@@ -3,35 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Materiały z przedmiotu TSiAI - Bootstrap, tworzenie stron">
     <title>TSiAI - Szkoła 2025-26</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preload" href="js/bootstrap.bundle.min.js" as="script">
+    <link rel="preload" href="js/script.js" as="script">
 </head>
-<body>
-    <div class="container my-4">
-        <div class="content-wrapper">
-            <a href="https://dziadu.dev" class="back-link mb-3 d-inline-block">← Powrót do strony głównej</a>
+<body class="overflow-x-hidden min-vh-100">
+    <div class="preloader">
+        <div class="loader">
+            <div class="loader-ring"></div>
+            <div class="loader-ring"></div>
+            <div class="loader-ring"></div>
+            <div class="loader-dot"></div>
+            <div class="loader-text">ŁADOWANIE</div>
+        </div>
+    </div>
+
+    <div class="container my-4 position-relative" style="z-index: 1;">
+        <div class="content-wrapper p-5 rounded-4 shadow-lg position-relative">
+            <a href="https://dziadu.dev" class="back-link mb-3 d-inline-flex align-items-center gap-2 text-white text-decoration-none rounded-3 px-4 py-2 fw-semibold">← Powrót do strony głównej</a>
             
-            <h1 class="text-center mb-2">🖥️ TSiAI</h1>
+            <h1 class="text-center mb-2 display-4 fw-bold">🖥️ TSiAI</h1>
 
             <div class="mb-4">
-                <h3 class="subsection-title">Bootstrap</h3>
+                <h3 class="subsection-title fs-4 fw-semibold mb-3 text-info">Bootstrap</h3>
                 <div class="row g-3">
                     <div class="col-sm-6 col-lg-4">
-                        <a href="https://prakt.dziadu.dev/TSiAI/bootstrap/index.html" class="link-card">
-                            <h3>Bootstrap - Główny projekt</h3>
-                            <p>Projekt z wykorzystaniem Bootstrap</p>
+                        <a href="https://prakt.dziadu.dev/TSiAI/bootstrap/index.html" class="link-card text-white text-decoration-none d-block h-100 position-relative rounded-4 p-4">
+                            <h3 class="mb-3 fs-5 fw-semibold">Bootstrap - Główny projekt</h3>
+                            <p class="m-0">Projekt z wykorzystaniem Bootstrap</p>
                         </a>
                     </div>
                     <div class="col-sm-6 col-lg-4">
-                        <a href="https://prakt.dziadu.dev/TSiAI/bootstrap/szablon/index.html" class="link-card">
-                            <h3>Bootstrap - Szablon</h3>
-                            <p>Szablon Bootstrap</p>
+                        <a href="https://prakt.dziadu.dev/TSiAI/bootstrap/szablon/index.html" class="link-card text-white text-decoration-none d-block h-100 position-relative rounded-4 p-4">
+                            <h3 class="mb-3 fs-5 fw-semibold">Bootstrap - Szablon</h3>
+                            <p class="m-0">Szablon Bootstrap</p>
                         </a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    
+    <button id="scrollToTop" class="btn position-fixed bottom-0 end-0 m-4 rounded-circle p-3 d-none" style="width:50px;height:50px;z-index:1000" aria-label="Przewiń do góry">
+        ⬆️
+    </button>
+    
+    <script src="js/bootstrap.bundle.min.js" defer></script>
+    <script src="js/script.js" defer></script>
 </body>
 </html>

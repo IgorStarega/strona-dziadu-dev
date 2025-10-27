@@ -3,21 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Materiały z przedmiotu Informatyka">
     <title>Informatyka - Szkoła 2025-26</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preload" href="js/bootstrap.bundle.min.js" as="script">
+    <link rel="preload" href="js/script.js" as="script">
 </head>
-<body>
-    <div class="container my-4">
-        <div class="content-wrapper">
-            <a href="https://dziadu.dev" class="back-link mb-3 d-inline-block">← Powrót do strony głównej</a>
+<body class="overflow-x-hidden min-vh-100">
+    <div class="preloader">
+        <div class="loader">
+            <div class="loader-ring"></div>
+            <div class="loader-ring"></div>
+            <div class="loader-ring"></div>
+            <div class="loader-dot"></div>
+            <div class="loader-text">ŁADOWANIE</div>
+        </div>
+    </div>
+
+    <div class="container my-4 position-relative" style="z-index: 1;">
+        <div class="content-wrapper p-5 rounded-4 shadow-lg position-relative">
+            <a href="https://dziadu.dev" class="back-link mb-3 d-inline-flex align-items-center gap-2 text-white text-decoration-none rounded-3 px-4 py-2 fw-semibold">← Powrót do strony głównej</a>
             
-            <h1 class="text-center mb-2">📚 Informatyka</h1>
-            <div class="empty-message">
-                <p>Brak dostępnych materiałów dla tego przedmiotu.</p>
-                <p>Materiały pojawią się tutaj po ich dodaniu.</p>
+            <h1 class="text-center mb-2 display-4 fw-bold">📚 Informatyka</h1>
+            <div class="empty-message fst-italic p-5 text-center rounded-4">
+                <p class="my-2 fs-5">Brak dostępnych materiałów dla tego przedmiotu.</p>
+                <p class="my-2 fs-5">Materiały pojawią się tutaj po ich dodaniu.</p>
             </div>
         </div>
     </div>
+    
+    <button id="scrollToTop" class="btn position-fixed bottom-0 end-0 m-4 rounded-circle p-3 d-none" style="width:50px;height:50px;z-index:1000" aria-label="Przewiń do góry">
+        ⬆️
+    </button>
+    
+    <script src="js/bootstrap.bundle.min.js" defer></script>
+    <script src="js/script.js" defer></script>
 </body>
 </html>
