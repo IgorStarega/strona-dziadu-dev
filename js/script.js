@@ -1,10 +1,26 @@
-window.addEventListener('load', () => {
+// Preloader handler
+(function() {
     const preloader = document.querySelector('.preloader');
-    if (preloader) {
-        preloader.classList.add('fade-out');
-        setTimeout(() => preloader.remove(), 500);
-    }
-});
+    if (!preloader) return;
+    
+    // Hide preloader when page is fully loaded
+    window.addEventListener('load', () => {
+        setTimeout(() => {
+            preloader.classList.add('fade-out');
+            setTimeout(() => {
+                preloader.remove();
+            }, 500);
+        }, 300); // Small delay to ensure smooth transition
+    });
+    
+    // Fallback: hide after max 5 seconds
+    setTimeout(() => {
+        if (preloader && !preloader.classList.contains('fade-out')) {
+            preloader.classList.add('fade-out');
+            setTimeout(() => preloader.remove(), 500);
+        }
+    }, 5000);
+})();
 
 document.addEventListener('DOMContentLoaded', () => {
     initScrollButton();
