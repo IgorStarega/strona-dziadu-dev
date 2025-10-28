@@ -175,6 +175,7 @@ h1 {
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255,255,255,.1);
     transition: all .3s ease;
+    cursor: pointer;
 }
 
 .link-card:hover {
@@ -182,6 +183,16 @@ h1 {
     border-color: var(--accent-1);
     background: rgba(22,33,62,.8);
     box-shadow: 0 10px 30px rgba(0,217,255,.2);
+}
+
+.stretched-link::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    content: "";
 }
 
 .back-link {
@@ -211,6 +222,18 @@ h1 {
 
 .hover-accent:hover {
     color: var(--accent-1) !important;
+}
+
+.btn-outline-light {
+    border: 1px solid rgba(255,255,255,0.3);
+    transition: all 0.3s ease;
+}
+
+.btn-outline-light:hover {
+    background: linear-gradient(135deg, var(--accent-1), var(--accent-2));
+    border-color: var(--accent-1);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,217,255,0.3);
 }
 
 @media (max-width: 768px) {
