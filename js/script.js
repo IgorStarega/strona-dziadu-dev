@@ -26,6 +26,8 @@ document.addEventListener('DOMContentLoaded', () => {
     initScrollButton();
     initKeyboardNav();
     initBackLink();
+    initTiltEffect();
+    initWelcomeToast();
 });
 
 function initScrollButton() {
@@ -75,4 +77,40 @@ function initBackLink() {
     document.addEventListener('keydown', (e) => {
         if (e.key === 'Escape' && link) location.href = link.href;
     });
+}
+
+// 3D Tilt Effect on Cards
+function initTiltEffect() {
+    const cards = document.querySelectorAll('[data-tilt]');
+    
+    cards.forEach(card => {
+        card.addEventListener('mousemove', (e) => {
+            const rect = card.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+            
+            const centerX = rect.width / 2;
+            const centerY = rect.height / 2;
+            
+            const rotateX = (y - centerY) / 10;
+            const rotateY = (centerX - x) / 10;
+            
+            card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.02)`;
+        });
+        
+        card.addEventListener('mouseleave', () => {
+            card.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) scale(1)';
+        });
+    });
+}
+
+// Welcome Toast
+function initWelcomeToast() {
+    const toast = document.getElementById('welcomeToast');
+    if (!toast) return;
+    
+    // Auto-remove after animation
+    setTimeout(() => {
+        toast.remove();
+    }, 4000);
 }
