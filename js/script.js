@@ -28,6 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initBackLink();
     initTiltEffect();
     initWelcomeToast();
+    initDownloadButtons();
 });
 
 function initScrollButton() {
@@ -113,4 +114,86 @@ function initWelcomeToast() {
     setTimeout(() => {
         toast.remove();
     }, 4000);
+}
+
+// Download buttons handler
+function initDownloadButtons() {
+    const downloadButtons = document.querySelectorAll('a[download]');
+    
+    downloadButtons.forEach(btn => {
+        btn.addEventListener('click', async (e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            
+            const url = btn.getAttribute('href');
+            if (!url) return;
+            
+            // Extract filename from URL
+            const urlParts = url.split('/');
+            let filename = urlParts[urlParts.length - 1];
+            
+            // If filename is index.html or similar, create a better name from the path
+            if (filename === 'index.html' || filename === '') {
+                const relevantParts = urlParts.filter(p => p && p !== 'index.html');
+                filename = relevantParts.slice(-2).join('-') + '.html';
+            }
+            
+            // Show loading feedback
+            const originalText = btn.innerHTML;
+            btn.innerHTML = '<span>⏳</span> Pobieranie...';
+            btn.style.pointerEvents = 'none';
+            
+            try {
+                // Try to fetch the file
+                const response = await fetch(url, {
+                    mode: 'cors',
+                    credentials: 'omit'
+                });
+                
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                
+                // Get the blob
+                const blob = await response.blob();
+                
+                // Create download link
+                const downloadUrl = window.URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.style.display = 'none';
+                a.href = downloadUrl;
+                a.download = filename;
+                
+                // Trigger download
+                document.body.appendChild(a);
+                a.click();
+                
+                // Cleanup
+                setTimeout(() => {
+                    window.URL.revokeObjectURL(downloadUrl);
+                    document.body.removeChild(a);
+                }, 100);
+                
+                // Success feedback
+                btn.innerHTML = '<span>✅</span> Pobrano!';
+                setTimeout(() => {
+                    btn.innerHTML = originalText;
+                    btn.style.pointerEvents = '';
+                }, 2000);
+                
+            } catch (error) {
+                console.error('Download error:', error);
+                
+                // Fallback: open in new tab
+                window.open(url, '_blank');
+                
+                // Error feedback
+                btn.innerHTML = '<span>📂</span> Otwarto w nowej karcie';
+                setTimeout(() => {
+                    btn.innerHTML = originalText;
+                    btn.style.pointerEvents = '';
+                }, 2000);
+            }
+        });
+    });
 }
