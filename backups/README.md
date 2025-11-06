@@ -1,44 +1,17 @@
 # 💾 Backupy HTML
 
-## 🤖 Automatyczny backup z walidacją
-
-### Użycie:
-
-```powershell
-# Szybki backup (jednorazowy)
-.\quick-backup.ps1
-
-# Automatyczny co 30 minut (domyślnie)
-.\auto-backup.ps1
-
-# Automatyczny co X minut
-.\auto-backup.ps1 -intervalMinutes 60
-
-# Jednorazowy backup (bez pętli)
-.\auto-backup.ps1 -runOnce
-```
-
-### Co robi skrypt:
-1. ✅ **Waliduje HTML** - sprawdza błędy (duplikaty, URLe, tagi)
-2. ✅ **Tworzy backup** - TYLKO jeśli walidacja przeszła
-3. ✅ **Czyści stare** - zachowuje ostatnie 10 backupów
-
-### Walidacja sprawdza:
-- ❌ Podwójne slashe w URL (`//`)
-- ❌ Niezamknięte tagi `<div>`
-- ❌ Brak podstawowych tagów HTML
-- ⚠️  Col poza row (ostrzeżenie)
-
----
-
 ## 📁 Struktura
 
 ```
 backups/
-├── html_backup_20251106/          ← Manualny backup
-└── html_backup_20251106_143022/   ← Automatyczny backup
-    ├── README.md
-    └── *.html (wszystkie pliki)
+└── html_backup_20251106/     ← Backup poprawnego stanu (6 listopada 2025)
+    ├── README.md             (opis backupu)
+    ├── index.html
+    ├── desktopy.html
+    ├── informatyka.html
+    ├── TSiAI.html
+    ├── WiAI.html
+    └── 404.html
 ```
 
 ## 🔄 Jak przywrócić backup
