@@ -1,147 +1,148 @@
 <!DOCTYPE html>
 <html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Materiały z przedmiotu WiAI - animacje CSS, formularze, PHP">
-    <title>WiAI - Szkoła 2025-26</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="preload" href="js/bootstrap.bundle.min.js" as="script">
-    <link rel="preload" href="js/script.js" as="script">
-</head>
-<body class="overflow-x-hidden min-vh-100">
-    <div class="preloader">
-        <div class="loader">
-            <div class="loader-ring"></div>
-            <div class="loader-ring"></div>
-            <div class="loader-ring"></div>
-            <div class="loader-dot"></div>
-            <div class="loader-text">ŁADOWANIE<span class="loader-dots"></span></div>
-        </div>
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="Materiały z przedmiotu WiAI - animacje CSS, formularze, PHP" name="description"/>
+  <title>
+   WiAI - Szkoła 2025-26
+  </title>
+  <link href="css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="css/style.css" rel="stylesheet"/>
+  <link as="script" href="js/bootstrap.bundle.min.js" rel="preload"/>
+  <link as="script" href="js/script.js" rel="preload"/>
+ </head>
+ <body class="overflow-x-hidden min-vh-100">
+  <div class="preloader">
+   <div class="loader">
+    <div class="loader-ring">
     </div>
-
-    <div class="container my-4 position-relative" style="z-index: 1;">
-        <div class="content-wrapper p-5 rounded-4 shadow-lg position-relative">
-            <a href="https://dziadu.dev" class="back-link mb-3 d-inline-flex align-items-center gap-2 text-white text-decoration-none rounded-3 px-4 py-2 fw-semibold">← Powrót do strony głównej</a>
-            
-            <h1 class="text-center mb-2 display-4 fw-bold">🌐 WiAI</h1>
-
-            <div class="mb-4">
-                <h3 class="subsection-title fs-4 fw-semibold mb-3 text-info">Animacje</h3>
-                <div class="row g-3 mb-3">
-                    <div class="col-sm-6 col-lg-4">
-                        <div class="link-card text-white text-decoration-none d-block h-100 position-relative rounded-4 p-4">
-                            <a href="https://prakt.dziadu.dev/WiAI/animacje/zadanie1/index.html" target="_blank" class="stretched-link"></a>
-                            <h3 class="mb-3 fs-5 fw-semibold">Animacja komputerowa</h3>
-                            <p class="mb-3">Podstawy animacji CSS</p>
-                            <a href="https://prakt.dziadu.dev/WiAI/animacje/zadanie1/index.html" download class="btn btn-sm btn-outline-light d-inline-flex align-items-center gap-2 position-relative" style="z-index: 2;" onclick="event.stopPropagation();">
-                                <span>⬇️</span> Pobierz
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-lg-4">
-                        <div class="link-card text-white text-decoration-none d-block h-100 position-relative rounded-4 p-4">
-                            <a href="https://prakt.dziadu.dev/WiAI/animacje/zadanie2/index.html" target="_blank" class="stretched-link"></a>
-                            <h3 class="mb-3 fs-5 fw-semibold">Animowane menu</h3>
-                            <p class="mb-3">Interaktywne menu z animacjami</p>
-                            <a href="https://prakt.dziadu.dev/WiAI/animacje/zadanie2/index.html" download class="btn btn-sm btn-outline-light d-inline-flex align-items-center gap-2 position-relative" style="z-index: 2;" onclick="event.stopPropagation();">
-                                <span>⬇️</span> Pobierz
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-lg-4">
-                        <div class="link-card text-white text-decoration-none d-block h-100 position-relative rounded-4 p-4">
-                            <a href="https://prakt.dziadu.dev/WiAI/animacje/zadanie3/index.html" target="_blank" class="stretched-link"></a>
-                            <h3 class="mb-3 fs-5 fw-semibold">Wyścig samochodów</h3>
-                            <p class="mb-3">Animacja wyścigu CSS</p>
-                            <a href="https://prakt.dziadu.dev/WiAI/animacje/zadanie3/index.html" download class="btn btn-sm btn-outline-light d-inline-flex align-items-center gap-2 position-relative" style="z-index: 2;" onclick="event.stopPropagation();">
-                                <span>⬇️</span> Pobierz
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="mb-4">
-                <h3 class="subsection-title fs-4 fw-semibold mb-3">Formularze</h3>
-                <div class="row g-3">
-                    <div class="col-sm-6 col-lg-4">
-                        <div class="link-card text-white text-decoration-none d-block h-100 position-relative rounded-4 p-4">
-                            <a href="https://prakt.dziadu.dev/WiAI/formularz/index.html" target="_blank" class="stretched-link"></a>
-                            <h3 class="mb-3 fs-5 fw-semibold">Formularz kontaktowy</h3>
-                            <p class="mb-3">Projekt formularza HTML/CSS</p>
-                            <a href="https://prakt.dziadu.dev/WiAI/formularz/index.html" download class="btn btn-sm btn-outline-light d-inline-flex align-items-center gap-2 position-relative" style="z-index: 2;" onclick="event.stopPropagation();">
-                                <span>⬇️</span> Pobierz
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="mb-4">
-                <h3 class="subsection-title fs-4 fw-semibold mb-3">PHP - Funkcje</h3>
-                <div class="row g-3">
-                    <div class="col-sm-6 col-lg-4">
-                        <div class="link-card text-white text-decoration-none d-block h-100 position-relative rounded-4 p-4">
-                            <a href="https://prakt.dziadu.dev/WiAI/PHP%20-%20Funkcje/zadanie1.php" target="_blank" class="stretched-link"></a>
-                            <h3 class="mb-3 fs-5 fw-semibold">Liczby pierwsze</h3>
-                            <p class="mb-3">Sprawdzanie liczb pierwszych w PHP</p>
-                            <a href="https://prakt.dziadu.dev/WiAI/PHP%20-%20Funkcje/zadanie1.php" download class="btn btn-sm btn-outline-light d-inline-flex align-items-center gap-2 position-relative" style="z-index: 2;" onclick="event.stopPropagation();">
-                                <span>⬇️</span> Pobierz
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-lg-4">
-                        <div class="link-card text-white text-decoration-none d-block h-100 position-relative rounded-4 p-4">
-                            <a href="https://prakt.dziadu.dev/WiAI/PHP%20-%20Funkcje/zadanie2.php" target="_blank" class="stretched-link"></a>
-                            <h3 class="mb-3 fs-5 fw-semibold">Pole prostokąta</h3>
-                            <p class="mb-3">Obliczanie pola prostokąta</p>
-                            <a href="https://prakt.dziadu.dev/WiAI/PHP%20-%20Funkcje/zadanie2.php" download class="btn btn-sm btn-outline-light d-inline-flex align-items-center gap-2 position-relative" style="z-index: 2;" onclick="event.stopPropagation();">
-                                <span>⬇️</span> Pobierz
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-lg-4">
-                        <div class="link-card text-white text-decoration-none d-block h-100 position-relative rounded-4 p-4">
-                            <a href="https://prakt.dziadu.dev/WiAI/PHP%20-%20Funkcje/zadanie3.php" target="_blank" class="stretched-link"></a>
-                            <h3 class="mb-3 fs-5 fw-semibold">Twierdzenie Pitagorasa</h3>
-                            <p class="mb-3">Sprawdzanie trójkąta prostokątnego</p>
-                            <a href="https://prakt.dziadu.dev/WiAI/PHP%20-%20Funkcje/zadanie3.php" download class="btn btn-sm btn-outline-light d-inline-flex align-items-center gap-2 position-relative" style="z-index: 2;" onclick="event.stopPropagation();">
-                                <span>⬇️</span> Pobierz
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-lg-4">
-                        <div class="link-card text-white text-decoration-none d-block h-100 position-relative rounded-4 p-4">
-                            <a href="https://prakt.dziadu.dev/WiAI/PHP%20-%20Funkcje/zadanie4.php" target="_blank" class="stretched-link"></a>
-                            <h3 class="mb-3 fs-5 fw-semibold">Sortowanie tablicy</h3>
-                            <p class="mb-3">Sortowanie tablicy w PHP</p>
-                            <a href="https://prakt.dziadu.dev/WiAI/PHP%20-%20Funkcje/zadanie4.php" download class="btn btn-sm btn-outline-light d-inline-flex align-items-center gap-2 position-relative" style="z-index: 2;" onclick="event.stopPropagation();">
-                                <span>⬇️</span> Pobierz
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-lg-4">
-                        <div class="link-card text-white text-decoration-none d-block h-100 position-relative rounded-4 p-4">
-                            <a href="https://prakt.dziadu.dev/WiAI/PHP%20-%20Funkcje/zadanie5.php" target="_blank" class="stretched-link"></a>
-                            <h3 class="mb-3 fs-5 fw-semibold">Porównywanie stringów</h3>
-                            <p class="mb-3">Funkcja strcmp w PHP</p>
-                            <a href="https://prakt.dziadu.dev/WiAI/PHP%20-%20Funkcje/zadanie5.php" download class="btn btn-sm btn-outline-light d-inline-flex align-items-center gap-2 position-relative" style="z-index: 2;" onclick="event.stopPropagation();">
-                                <span>⬇️</span> Pobierz
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <div class="loader-ring">
     </div>
-    
-    <button id="scrollToTop" class="btn position-fixed bottom-0 end-0 m-4 rounded-circle p-3 d-none" style="width:50px;height:50px;z-index:1000" aria-label="Przewiń do góry">
-        ⬆️
-    </button>
-    
-    <script src="js/bootstrap.bundle.min.js" defer></script>
-    <script src="js/script.js" defer></script>
-</body>
+    <div class="loader-ring">
+    </div>
+    <div class="loader-dot">
+    </div>
+    <div class="loader-text">
+     ŁADOWANIE
+     <span class="loader-dots">
+     </span>
+    </div>
+   </div>
+  </div>
+  <div class="container my-4 position-relative" style="z-index: 1;">
+   <div class="content-wrapper p-5 rounded-4 shadow-lg position-relative">
+    <a class="back-link mb-3 d-inline-flex align-items-center gap-2 text-white text-decoration-none rounded-3 px-4 py-2 fw-semibold" href="https://dziadu.dev">
+     ← Powrót do strony głównej
+    </a>
+    <h1 class="text-center mb-2 display-4 fw-bold">
+     🌐 WiAI
+    </h1>
+    <div class="mb-4">
+     <h3 class="subsection-title fs-4 fw-semibold mb-3">
+      animacje
+     </h3>
+     <h4 class="subsection-subtitle fs-5 mt-4 mb-3 ms-3">
+      zadanie1
+     </h4>
+     <div class="row g-3">
+      <div class="col-sm-6 col-lg-4">
+       <div class="link-card text-white text-decoration-none d-block h-100 position-relative rounded-4 p-4">
+        <a class="stretched-link" href="https://prakt.dziadu.dev//animacje/zadanie1/zadanie1/index.html" target="_blank">
+        </a>
+        <h3 class="mb-3 fs-5 fw-semibold">
+         zadanie1
+        </h3>
+        <p class="mb-3">
+         Zadanie1
+        </p>
+        <a class="btn btn-sm btn-outline-light d-inline-flex align-items-center gap-2 position-relative" download="" href="https://prakt.dziadu.dev//animacje/zadanie1/zadanie1/index.html" onclick="event.stopPropagation();" style="z-index: 2;">
+         <span>
+          ⬇️
+         </span>
+         Pobierz
+        </a>
+       </div>
+      </div>
+     </div>
+     <h4 class="subsection-subtitle fs-5 mt-4 mb-3 ms-3">
+      zadanie2
+     </h4>
+     <div class="row g-3">
+      <div class="col-sm-6 col-lg-4">
+       <div class="link-card text-white text-decoration-none d-block h-100 position-relative rounded-4 p-4">
+        <a class="stretched-link" href="https://prakt.dziadu.dev//animacje/zadanie2/zadanie2/index.html" target="_blank">
+        </a>
+        <h3 class="mb-3 fs-5 fw-semibold">
+         zadanie2
+        </h3>
+        <p class="mb-3">
+         Zadanie2
+        </p>
+        <a class="btn btn-sm btn-outline-light d-inline-flex align-items-center gap-2 position-relative" download="" href="https://prakt.dziadu.dev//animacje/zadanie2/zadanie2/index.html" onclick="event.stopPropagation();" style="z-index: 2;">
+         <span>
+          ⬇️
+         </span>
+         Pobierz
+        </a>
+       </div>
+      </div>
+     </div>
+     <h4 class="subsection-subtitle fs-5 mt-4 mb-3 ms-3">
+      zadanie3
+     </h4>
+     <div class="row g-3">
+      <div class="col-sm-6 col-lg-4">
+       <div class="link-card text-white text-decoration-none d-block h-100 position-relative rounded-4 p-4">
+        <a class="stretched-link" href="https://prakt.dziadu.dev//animacje/zadanie3/zadanie3/index.html" target="_blank">
+        </a>
+        <h3 class="mb-3 fs-5 fw-semibold">
+         zadanie3
+        </h3>
+        <p class="mb-3">
+         Zadanie3
+        </p>
+        <a class="btn btn-sm btn-outline-light d-inline-flex align-items-center gap-2 position-relative" download="" href="https://prakt.dziadu.dev//animacje/zadanie3/zadanie3/index.html" onclick="event.stopPropagation();" style="z-index: 2;">
+         <span>
+          ⬇️
+         </span>
+         Pobierz
+        </a>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class="mb-4">
+     <h3 class="subsection-title fs-4 fw-semibold mb-3">
+      formularz
+     </h3>
+     <div class="col-sm-6 col-lg-4">
+      <div class="link-card text-white text-decoration-none d-block h-100 position-relative rounded-4 p-4">
+       <a class="stretched-link" href="https://prakt.dziadu.dev//formularz/index.html" target="_blank">
+       </a>
+       <h3 class="mb-3 fs-5 fw-semibold">
+        index
+       </h3>
+       <p class="mb-3">
+        Index
+       </p>
+       <a class="btn btn-sm btn-outline-light d-inline-flex align-items-center gap-2 position-relative" download="" href="https://prakt.dziadu.dev//formularz/index.html" onclick="event.stopPropagation();" style="z-index: 2;">
+        <span>
+         ⬇️
+        </span>
+        Pobierz
+       </a>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <button aria-label="Przewiń do góry" class="btn position-fixed bottom-0 end-0 m-4 rounded-circle p-3 d-none" id="scrollToTop" style="width:50px;height:50px;z-index:1000">
+   ⬆️
+  </button>
+  <script defer="" src="js/bootstrap.bundle.min.js">
+  </script>
+  <script defer="" src="js/script.js">
+  </script>
+ </body>
 </html>
