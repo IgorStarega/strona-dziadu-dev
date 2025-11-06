@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Strona nie została znaleziona - 404">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎓</text></svg>">
+    <title>404 - Strona nie znaleziona</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .error-container {
+            min-height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .error-number {
+            font-size: 10rem;
+            font-weight: 900;
+            background: linear-gradient(135deg, var(--accent-1), var(--accent-2), var(--accent-3));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            line-height: 1;
+            animation: glitch 2s infinite;
+        }
+        @keyframes glitch {
+            0%, 100% { transform: translate(0); }
+            20% { transform: translate(-2px, 2px); }
+            40% { transform: translate(-2px, -2px); }
+            60% { transform: translate(2px, 2px); }
+            80% { transform: translate(2px, -2px); }
+        }
+        .error-icon {
+            font-size: 5rem;
+            animation: float 3s ease-in-out infinite;
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+    </style>
+</head>
+<body class="overflow-x-hidden min-vh-100">
+    <div class="container my-4 position-relative" style="z-index: 1;">
+        <div class="content-wrapper p-5 rounded-4 shadow-lg position-relative">
+            <div class="error-container text-center">
+                <div>
+                    <div class="error-icon mb-4">🔍</div>
+                    <h1 class="error-number mb-4">404</h1>
+                    <h2 class="text-white mb-3">Strona nie znaleziona</h2>
+                    <p class="text-white-50 mb-5 fs-5">Ups! Wygląda na to, że ta strona zaginęła w cyfrowej przestrzeni...</p>
+                    
+                    <div class="d-flex gap-3 justify-content-center flex-wrap">
+                        <a href="index.html" class="btn btn-primary btn-lg px-4 py-3">
+                            🏠 Strona główna
+                        </a>
+                        <button onclick="history.back()" class="btn btn-outline-light btn-lg px-4 py-3">
+                            ← Wróć
+                        </button>
+                    </div>
+                    
+                    <div class="mt-5 pt-5">
+                        <p class="text-white-50 small">Możliwe przyczyny:</p>
+                        <ul class="list-unstyled text-white-50 small">
+                            <li>• Link jest nieprawidłowy lub nieaktualny</li>
+                            <li>• Strona została przeniesiona lub usunięta</li>
+                            <li>• Literówka w adresie URL</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js" defer></script>
+</body>
+</html>

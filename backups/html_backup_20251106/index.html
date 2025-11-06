@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Materiały szkolne z informatyki, desktopów, TSiAI i WiAI">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎓</text></svg>">
+    <title>Szkoła 2025-26 - Strona główna</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preload" href="js/bootstrap.bundle.min.js" as="script">
+    <link rel="preload" href="js/script.js" as="script">
+</head>
+<body class="overflow-x-hidden min-vh-100">
+    <div class="preloader">
+        <div class="loader">
+            <div class="loader-ring"></div>
+            <div class="loader-ring"></div>
+            <div class="loader-ring"></div>
+            <div class="loader-dot"></div>
+            <div class="loader-text">ŁADOWANIE<span class="loader-dots"></span></div>
+        </div>
+    </div>
+    <div class="container my-4 position-relative" style="z-index: 1;">
+        <div class="content-wrapper p-5 rounded-4 shadow-lg position-relative">
+            <h1 class="text-center mb-2 display-4 fw-bold">🎓 Szkoła 2025-26</h1>
+            <p class="subtitle text-center mb-4 fs-5 text-white-50">Wybierz przedmiot</p>
+
+            <div class="row g-4 mb-5">
+                <div class="col-sm-6 col-lg-3">
+                    <a href="desktopy.html" class="main-card text-white text-decoration-none d-flex flex-column align-items-center justify-content-center text-center position-relative rounded-4 p-4" data-tilt>
+                        <div class="card-glow"></div>
+                        <div class="icon mb-3">💻</div>
+                        <h2 class="text-white fs-4 fw-bold m-0">Desktopy</h2>
+                    </a>
+                </div>
+
+                <div class="col-sm-6 col-lg-3">
+                    <a href="informatyka.html" class="main-card text-white text-decoration-none d-flex flex-column align-items-center justify-content-center text-center position-relative rounded-4 p-4" data-tilt>
+                        <div class="card-glow"></div>
+                        <div class="icon mb-3">📚</div>
+                        <h2 class="text-white fs-4 fw-bold m-0">Informatyka</h2>
+                    </a>
+                </div>
+
+                <div class="col-sm-6 col-lg-3">
+                    <a href="TSiAI.html" class="main-card text-white text-decoration-none d-flex flex-column align-items-center justify-content-center text-center position-relative rounded-4 p-4" data-tilt>
+                        <div class="card-glow"></div>
+                        <div class="icon mb-3">🖥️</div>
+                        <h2 class="text-white fs-4 fw-bold m-0">TSiAI</h2>
+                    </a>
+                </div>
+
+                <div class="col-sm-6 col-lg-3">
+                    <a href="WiAI.html" class="main-card text-white text-decoration-none d-flex flex-column align-items-center justify-content-center text-center position-relative rounded-4 p-4" data-tilt>
+                        <div class="card-glow"></div>
+                        <div class="icon mb-3">🌐</div>
+                        <h2 class="text-white fs-4 fw-bold m-0">WiAI</h2>
+                    </a>
+                </div>
+            </div>
+
+            <footer class="text-center mt-5 pt-4 border-top border-secondary text-white-50">
+                <p class="mb-2">© 2025 <a href="https://dziadu.dev" class="text-decoration-none text-white-50 hover-accent">dziadu.dev</a></p>
+                <p class="small mb-0">Ostatnia aktualizacja: <span id="lastUpdate">05.11.2025</span></p>
+            </footer>
+        </div>
+    
+    <button id="scrollToTop" class="btn position-fixed bottom-0 end-0 m-4 rounded-circle p-3 d-none" style="width:50px;height:50px;z-index:1000" aria-label="Przewiń do góry">
+        ⬆️
+    </button>
+    
+    <script src="js/bootstrap.bundle.min.js" defer></script>
+    <script src="js/script.js" defer></script>
+</body>
+</html>
