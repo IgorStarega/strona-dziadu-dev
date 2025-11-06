@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strona z Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="container-fluid p-3">
+    
+    <div class="row mb-3">
+        <div class="col-12">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light border border-dark border-3" style="min-height: 150px;">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img src="obrazy/logo.png" alt="Logo" height="100">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item"><a class="nav-link" href="#home">Start</a></li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownAbout" role="button" data-bs-toggle="dropdown">
+                                    O nas
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#historia">Historia firmy</a></li>
+                                    <li><a class="dropdown-item" href="#zespol">Nasz zespół</a></li>
+                                    <li><a class="dropdown-item" href="#misja">Misja i wizja</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="#kariera">Kariera</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownServices" role="button" data-bs-toggle="dropdown">
+                                    Usługi
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#webdev">Tworzenie stron WWW</a></li>
+                                    <li><a class="dropdown-item" href="#seo">Pozycjonowanie SEO</a></li>
+                                    <li><a class="dropdown-item" href="#marketing">Marketing online</a></li>
+                                    <li><a class="dropdown-item" href="#design">Projektowanie graficzne</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" role="button" data-bs-toggle="dropdown">
+                                    Portfolio
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#realizacje">Nasze realizacje</a></li>
+                                    <li><a class="dropdown-item" href="#case-studies">Case studies</a></li>
+                                    <li><a class="dropdown-item" href="#opinie">Opinie klientów</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="#contact">Kontakt</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    
+    <div class="row mb-3 d-none d-md-block">
+        <div class="col-12">
+            <div id="carouselSlider" class="carousel slide border border-dark border-3" data-bs-ride="carousel" style="min-height: 150px;">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselSlider" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#carouselSlider" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carouselSlider" data-bs-slide-to="2"></button>
+                    <button type="button" data-bs-target="#carouselSlider" data-bs-slide-to="3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="obrazy/volvo.png" class="d-block w-100" alt="Slajd 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="obrazy/scania.png" class="d-block w-100" alt="Slajd 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="obrazy/daf.png" class="d-block w-100" alt="Slajd 3">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="obrazy/man.png" class="d-block w-100" alt="Slajd 4">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselSlider" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselSlider" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="row mb-3 md-equal-height">
+        <div class="col-lg-3 col-md-6 col-12 order-2 order-md-1 mb-3 mb-md-0">
+            <div class="border border-dark border-3 p-3 h-100" style="min-height: 150px;">
+                <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist">
+                    <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab">Volvo FH16</button>
+                    <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab">Scania S V8</button>
+                    <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab">DAF XF</button>
+                    <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab">MAN TGX</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-9 col-md-6 col-12 order-1 order-md-2 d-flex flex-column mb-3 mb-md-0">
+            <div class="border border-dark border-3 p-4 mb-3 flex-grow-1" style="min-height: 150px;">
+                <div class="tab-content" id="v-pills-tabContent">
+                    <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel">
+                        <h3>Volvo FH16</h3>
+                        <p>Volvo FH16 to najmocniejszy ciężarowy model Volvo, zaprojektowany do ekstremalnych zadań transportowych. Wyposażony jest w 17-litrowy silnik D17 o mocy od 600 do 780 KM i momencie obrotowym nawet 3800 Nm, co czyni go potęgą na rynku samochodów ciężarowych. Idealnie sprawdza się w przewozach ponadnormatywnych, leśnictwie, kamieniołomach i transporcie ciężkich ładunków. FH16 oferuje zaawansowane systemy oszczędzania paliwa, takie jak I-See, oraz najwyższy komfort i bezpieczeństwo kierowcy dzięki nowoczesnej, ergonomiczej kabinie i aktywnym systemom wspomagającym jazdę. Solidna konstrukcja i wytrzymałe materiały zapewniają odporność na trudne warunki pracy.​</p>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-profile" role="tabpanel">
+                        <h3>Scania S V8</h3>
+                        <p>Scania S V8 to prestiżowy, mocny ciągnik siodłowy wyposażony w legendarny silnik V8 dostępny w mocy od 530 do 770 KM i momencie obrotowym do 3700 Nm. Jest to pojazd zaprojektowany z myślą o wytrzymałości, niezawodności i oszczędności paliwa, dzięki zaawansowanym rozwiązaniom takim jak automatyczna skrzynia biegów Scania Opticruise i systemy redukcji emisji SCR. Kabina S V8 zapewnia najwyższy komfort, jest przestronna i bogato wyposażona, co czyni ją przyjazną dla kierowcy podczas długich tras. Silnik może być zasilany olejem napędowym, biodieslem i HVO, co sprzyja ekologii. Dodatkowo wersje V8 oferują retarder do efektywnego hamowania oraz opcjonalną przystawkę odbioru mocy.</p>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-messages" role="tabpanel">
+                        <h3>DAF XF</h3>
+                        <p>DAF XF to wszechstronny ciągnik siodłowy ceniony za wydajność i niezawodność. Wyposażony jest w silniki MX-13 o pojemności 12,9 litra i mocy od około 430 do 530 KM, spełniające normy Euro 6. Charakteryzuje się różnymi konfiguracjami osi, często spotykany jako 4x2, z ciężarami całkowitymi do 44 ton. XF oferuje przestronną kabinę z wariantami takimi jak Space Cab czy Super Space Cab, zapewniającą komfort kierowcy na długich trasach. Zaawansowane systemy bezpieczeństwa i ekologiczne technologie spalania sprawiają, że to popularny wybór do transportu ciężarowego na różnych dystansach.</p>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-settings" role="tabpanel">
+                        <h3>MAN TGX</h3>
+                        <p>MAN TGX to nowoczesny ciągnik siodłowy zaprojektowany z myślą o transporcie dalekobieżnym. W 2025 roku dostępny jest z silnikami spełniającymi normę Euro 6e o mocy od około 400 do 520 KM, z pojemnością 12,4 litra. Pojazd oferuje ergonomiczny kokpit i nowoczesne systemy wspomagania jazdy, które zwiększają komfort i bezpieczeństwo kierowcy. MAN TGX wyposażony jest w automatyczną skrzynię biegów i retarder, co poprawia kontrolę nad pojazdem. Oferuje przestronną kabinę, często z dodatkowymi udogodnieniami, jak systemy multimedialne i klimatyzacja postojowa. To solidna, oszczędna i bezpieczna ciężarówka dla profesjonalistów transportu.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border border-dark border-3 p-4 d-none d-lg-block" style="min-height: 150px;">
+                <h4 class="text-center mb-3">Formularz kontaktowy</h4>
+                <form>
+                    <div class="mb-2">
+                        <label for="imie" class="form-label">Imię i nazwisko</label>
+                        <input type="text" class="form-control" id="imie" required>
+                    </div>
+                    <div class="mb-2">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" required>
+                    </div>
+                    <div class="mb-2">
+                        <label for="wiadomosc" class="form-label">Wiadomość</label>
+                        <textarea class="form-control" id="wiadomosc" rows="2" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Wyślij</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <div class="row mb-3 d-lg-none">
+        <div class="col-12 border border-dark border-3 p-4" style="min-height: 150px;">
+            <h4 class="text-center mb-3">Formularz kontaktowy</h4>
+            <form>
+                    <div class="mb-2">
+                        <label for="imieMobile" class="form-label">Imię i nazwisko</label>
+                        <input type="text" class="form-control" id="imieMobile" required>
+                    </div>
+                    <div class="mb-2">
+                        <label for="emailMobile" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="emailMobile" required>
+                    </div>
+                    <div class="mb-2">
+                        <label for="wiadomoscMobile" class="form-label">Wiadomość</label>
+                        <textarea class="form-control" id="wiadomoscMobile" rows="2" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Wyślij</button>
+                </form>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-12">
+            <footer class="bg-dark text-white text-center py-4 border border-dark border-3" style="min-height: 150px;">
+                <p class="mb-0">&copy; 2025. Wszystkie prawa zastrzeżone.</p>
+                <p class="mb-0">Kontakt: kontakt@kontakt.kontakt | Tel: 123-456-789</p>
+            </footer>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadanie 1 - zdarzenia</title>
+</head>
+<body>
+    <script>
+        function podajImie() {
+            let imie = prompt("Jak masz na imię?");
+            if (imie === null || imie.trim() === "") {
+                document.body.innerHTML += "<h2>Miło, że jesteś z nami</h2>";
+            } else {
+                document.body.innerHTML += "<h2>Miło, że jesteś z nami, " + imie + "</h2>";
+            }
+        }
+
+        window.onload = podajImie;
+    </script>
+</body>
+</html>

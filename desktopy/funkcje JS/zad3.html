@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>liczby ujemne i nieujemne</title>
+</head>
+<body>
+    <script>
+        function Zliczaj(n) {
+            var liczbyUjemne = 0;
+            var liczbyNieujemne = 0;
+
+            for (var i = 0; i < n; i++) {
+                var liczba = Number(prompt("Podaj liczbę:"));
+                if (liczba < 0) {
+                    liczbyUjemne++;
+                } else {
+                    liczbyNieujemne++;
+                }
+            }
+
+            alert("Liczby ujemne: " + liczbyUjemne + "\nLiczby nieujemne: " + liczbyNieujemne);
+        }
+
+        var n = Number(prompt("Ile liczb chcesz wprowadzić?"));
+        Zliczaj(n);
+    </script>
+</body>
+</html>

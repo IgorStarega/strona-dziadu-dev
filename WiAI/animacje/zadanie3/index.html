@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wyścig Samochodów</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            text-align: center;
+            background-color: #f0f0f0;
+            margin: 20px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        .road {
+            position: relative;
+            width: 100%;
+            height: 450px;
+            background-color: transparent;
+            overflow: hidden;
+            margin: 20px auto;
+        }
+
+        .car {
+            position: absolute;
+            left: -100px;
+            width: 100px;
+            height: auto;
+            animation-timing-function: linear;
+            animation-iteration-count: 1;
+        }
+
+        .car img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .car1 {
+            top: 30px;
+            animation: drive 5s linear 1 forwards;
+        }
+
+        .car2 {
+            top: 110px;
+            animation: drive 6s linear 1 forwards;
+        }
+
+        .car3 {
+            top: 190px;
+            animation: drive 4s linear 1 forwards;
+        }
+
+        .car4 {
+            top: 270px;
+            animation: drive 7s linear 1 forwards;
+        }
+
+        .car5 {
+            top: 350px;
+            animation: drive 5.5s linear 1 forwards;
+        }
+
+        @keyframes drive {
+            0% {
+                left: -100px;
+            }
+            100% {
+                left: calc(100% - 100px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Wyścig samochodów</h1>
+    <div class="road">
+        <div class="car car1">
+            <img src="img/car1.png" alt="Car 1">
+        </div>
+        <div class="car car2">
+            <img src="img/car2.png" alt="Car 2">
+        </div>
+        <div class="car car3">
+            <img src="img/car3.png" alt="Car 3">
+        </div>
+        <div class="car car4">
+            <img src="img/car4.png" alt="Car 4">
+        </div>
+        <div class="car car5">
+            <img src="img/car5.png" alt="Car 5">
+        </div>
+    </div>
+</body>
+</html>

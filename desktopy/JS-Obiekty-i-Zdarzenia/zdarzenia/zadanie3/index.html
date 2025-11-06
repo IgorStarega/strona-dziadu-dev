@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planety układu słonecznego</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+        }
+        table {
+            width: 100%;
+        }
+        td {
+            border: 3px solid white;
+            background-color: white;
+        }
+        img {
+            width: 150px;
+            height: 150px;
+            cursor: pointer;
+        }
+        #tabela {
+            background-color: #5DADE2;
+            text-align: center;
+        }
+        #wynik {
+            background-color: #5DADE2;
+            text-align: center;
+            padding: 10px;
+        }
+        #tresc {
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+    <script>
+        function merkury()
+        {
+            document.getElementById("wynik").innerHTML="MERKURY";
+            document.getElementById("tresc").innerHTML="Merkury - najmniejsza planeta Układu Słonecznego,<br>Krąży najbliżej Słońca, ma skalistą powierzchnię.<br>Temperatura waha się od -173°C do 427°C,<br>Nie posiada atmosfery ani księżyców.";
+        }
+        function wenus()
+        {
+            document.getElementById("wynik").innerHTML="WENUS";
+            document.getElementById("tresc").innerHTML="Wenus - najjaśniejszy obiekt na niebie po Słońcu i Księżycu,<br>Gęsta atmosfera z dwutlenku węgla tworzy efekt cieplarniany.<br>Temperatura powierzchni wynosi około 465°C,<br>Obraca się w kierunku przeciwnym niż większość planet.";
+        }
+        function ziemia()
+        {
+            document.getElementById("wynik").innerHTML="ZIEMIA";
+            document.getElementById("tresc").innerHTML="Ziemia - jedyna znana planeta z życiem,<br>70% powierzchni pokrywają oceany.<br>Posiada jeden naturalny księżyc,<br>Atmosfera chroni przed promieniowaniem kosmicznym.";
+        }
+        function mars()
+        {
+            document.getElementById("wynik").innerHTML="MARS";
+            document.getElementById("tresc").innerHTML="Mars - zwany Czerwoną Planetą z powodu tlenków żelaza,<br>Posiada najwyższy wulkan w Układzie Słonecznym - Olympus Mons.<br>Ma dwa małe księżyce: Fobos i Deimos,<br>Temperatura wynosi średnio -63°C.";
+        }
+        function jowisz()
+        {
+            document.getElementById("wynik").innerHTML="JOWISZ";
+            document.getElementById("tresc").innerHTML="Jowisz - największa planeta Układu Słonecznego,<br>Gazowy olbrzym złożony głównie z wodoru i helu.<br>Wielka Czerwona Plama to gigantyczny wir burzowy,<br>Posiada co najmniej 95 księżyców.";
+        }
+    </script>
+
+</head>
+<body>
+    <div id="tabela">
+        <table id="dane">
+            <tr>
+                <td><img src="img/merkury.png" id="merkury" onclick="merkury()"></td>
+                <td><img src="img/wenus.png" id="wenus" onclick="wenus()"></td>
+                <td><img src="img/ziemia.png" id="ziemia" onclick="ziemia()"></td>
+                <td><img src="img/mars.png" id="mars" onclick="mars()"></td>
+                <td><img src="img/jowisz.png" id="jowisz" onclick="jowisz()"></td>
+            </tr>
+        </table>
+    </div>
+    <div id="wynik">PLANETY</div>
+    <div id="tresc">
+        Merkury, Wenus, Ziemia, Mars i Jowisz,<br>
+        To pierwsze planety układu słonecznego.<br>
+        Kliknij na planetę, aby dowiedzieć się więcej.
+    </div>
+
+</body>
+</html>

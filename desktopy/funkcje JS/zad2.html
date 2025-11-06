@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pole powierzchni prostopadłościanu</title>
+</head>
+<body>
+    <script>
+        function poleProstokata(a, b) {
+            return a * b;
+        }
+
+        function poleKwadratu(a) {
+            return a * a;
+        }
+
+        var a = Number(prompt("Podaj długość boku podstawy: "));
+        var b = Number(prompt("Podaj wysokość prostopadłościanu: "));
+
+        var polePodstawy = poleKwadratu(a);
+        var poleBoczne1 = poleProstokata(a, b);
+        var poleBoczne2 = poleProstokata(a, b);
+
+        var polePowierzchni = 2 * polePodstawy + 2 * poleBoczne1 + 2 * poleBoczne2;
+
+        alert("Pole powierzchni prostopadłościanu wynosi: " + polePowierzchni);
+    </script>
+</body>
+</html>
