@@ -1,0 +1,37 @@
+# Kompresja GZIP
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript application/x-javascript application/json
+</IfModule>
+
+# Cache Control dla statycznych zasobów
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType image/jpeg "access plus 1 year"
+    ExpiresByType image/png "access plus 1 year"
+    ExpiresByType text/css "access plus 1 month"
+    ExpiresByType application/javascript "access plus 1 month"
+    ExpiresByType text/html "access plus 0 seconds"
+</IfModule>
+
+# Bezpieczeństwo - ukryj informacje o serwerze
+ServerSignature Off
+
+# Blokuj dostęp do wrażliwych plików
+<FilesMatch "^\.">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+# Włącz SSL (jeśli dostępne)
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    # Przekieruj HTTP na HTTPS (odkomentuj gdy SSL jest aktywne)
+    # RewriteCond %{HTTPS} off
+    # RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+</IfModule>
+
+# Zabezpieczenie przed listowaniem katalogów
+Options -Indexes
+
+# Charset UTF-8
+AddDefaultCharset UTF-8

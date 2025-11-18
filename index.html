@@ -632,30 +632,5 @@
 
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/script.js"></script>
-    <script>
-        function downloadFolder(folderName) {
-            alert('Przygotowuję archiwum całego przedmiotu: ' + folderName + '\n\nFunkcja wymaga konfiguracji serwera dla pełnej obsługi.');
-        }
-
-        function downloadSubsection(subject, subsection) {
-            alert('Przygotowuję archiwum sekcji: ' + subject + '/' + subsection + '\n\nFunkcja wymaga konfiguracji serwera dla pełnej obsługi.');
-        }
-
-        // Animacja collapse icon
-        document.querySelectorAll('[data-bs-toggle="collapse"]').forEach(trigger => {
-            trigger.addEventListener('click', function() {
-                const icon = this.querySelector('.collapse-icon');
-                const target = document.querySelector(this.dataset.bsTarget);
-                
-                target.addEventListener('shown.bs.collapse', () => {
-                    icon.style.transform = 'rotate(180deg)';
-                });
-                
-                target.addEventListener('hidden.bs.collapse', () => {
-                    icon.style.transform = 'rotate(0deg)';
-                });
-            });
-        });
-    </script>
 </body>
 </html>
