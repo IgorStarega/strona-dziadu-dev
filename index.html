@@ -3,80 +3,649 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Materiały szkolne z informatyki, desktopów, TSiAI i WiAI">
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎓</text></svg>">
-    <title>Szkoła 2025-26 - Strona główna</title>
+    <meta name="description" content="Materiały edukacyjne - zorganizowane i łatwo dostępne">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📚</text></svg>">
+    <title>Materiały Edukacyjne 2025-26</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="preload" href="js/bootstrap.bundle.min.js" as="script">
-    <link rel="preload" href="js/script.js" as="script">
 </head>
-<body class="overflow-x-hidden min-vh-100">
-    <div class="preloader">
-        <div class="loader">
-            <div class="loader-ring"></div>
-            <div class="loader-ring"></div>
-            <div class="loader-ring"></div>
-            <div class="loader-dot"></div>
-            <div class="loader-text">ŁADOWANIE<span class="loader-dots"></span></div>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-brand">
+                <span class="brand-icon">📚</span>
+                <span class="brand-text">Materiały 2025-26</span>
+            </div>
+            <div class="navbar-info">
+                Ostatnia aktualizacja: 18.11.2025
+            </div>
         </div>
-    </div>
-    <div class="container my-4 position-relative" style="z-index: 1;">
-        <div class="content-wrapper p-5 rounded-4 shadow-lg position-relative">
-            <h1 class="text-center mb-2 display-4 fw-bold">🎓 Szkoła 2025-26</h1>
-            <p class="subtitle text-center mb-4 fs-5 text-white-50">Wybierz przedmiot</p>
+    </nav>
 
-            <div class="row g-4 mb-5">
-                <div class="col-sm-6 col-lg-3">
-                    <a href="desktopy.html" class="main-card text-white text-decoration-none d-flex flex-column align-items-center justify-content-center text-center position-relative rounded-4 p-4" data-tilt>
-                        <div class="card-glow"></div>
-                        <div class="icon mb-3">💻</div>
-                        <h2 class="text-white fs-4 fw-bold m-0">Desktopy</h2>
-                    </a>
+    <div class="container py-5">
+        <div class="subjects-container">
+            <!-- Desktopy -->
+            <div class="subject-section">
+                <div class="subject-header" data-bs-toggle="collapse" data-bs-target="#desktopy">
+                    <div class="subject-info">
+                        <span class="subject-icon">💻</span>
+                        <div>
+                            <h2 class="subject-title">Desktopy</h2>
+                            <p class="subject-desc">JavaScript, obiekty i zdarzenia</p>
+                        </div>
+                    </div>
+                    <div class="header-actions">
+                        <button class="btn-download" onclick="downloadFolder('desktopy'); event.stopPropagation();">
+                            <span>📦</span> Pobierz całość
+                        </button>
+                        <span class="collapse-icon">▼</span>
+                    </div>
                 </div>
+                <div class="collapse show" id="desktopy">
+                    <div class="subject-content">
+                        <div class="folder-group">
+                            <div class="folder-group-header">
+                                <h3>JS-Obiekty-i-Zdarzenia</h3>
+                                <button class="btn-download-subsection" onclick="downloadSubsection('desktopy', 'JS-Obiekty-i-Zdarzenia'); event.stopPropagation();">
+                                    <span>📦</span> Pobierz sekcję
+                                </button>
+                            </div>
+                            <div class="folder-subgroup">
+                                <h4>Obiekty</h4>
+                                <div class="files-grid">
+                                    <div class="file-item">
+                                        <span class="file-name">Zadanie 1</span>
+                                        <div class="file-actions">
+                                            <a href="https://prakt.dziadu.dev/desktopy/JS-Obiekty-i-Zdarzenia/obiekty/zadanie1/index.html" class="btn-view" target="_blank">Otwórz</a>
+                                            <a href="https://prakt.dziadu.dev/desktopy/JS-Obiekty-i-Zdarzenia/obiekty/zadanie1/index.html" class="btn-download-file" download>⬇️</a>
+                                        </div>
+                                    </div>
+                                    <div class="file-item">
+                                        <span class="file-name">Zadanie 2</span>
+                                        <div class="file-actions">
+                                            <a href="https://prakt.dziadu.dev/desktopy/JS-Obiekty-i-Zdarzenia/obiekty/zadanie2/index.html" class="btn-view" target="_blank">Otwórz</a>
+                                            <a href="https://prakt.dziadu.dev/desktopy/JS-Obiekty-i-Zdarzenia/obiekty/zadanie2/index.html" class="btn-download-file" download>⬇️</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="folder-subgroup">
+                                <h4>Zdarzenia</h4>
+                                <div class="files-grid">
+                                    <div class="file-item">
+                                        <span class="file-name">Zadanie 1</span>
+                                        <div class="file-actions">
+                                            <a href="https://prakt.dziadu.dev/desktopy/JS-Obiekty-i-Zdarzenia/zdarzenia/zadanie1/index.html" class="btn-view" target="_blank">Otwórz</a>
+                                            <a href="https://prakt.dziadu.dev/desktopy/JS-Obiekty-i-Zdarzenia/zdarzenia/zadanie1/index.html" class="btn-download-file" download>⬇️</a>
+                                        </div>
+                                    </div>
+                                    <div class="file-item">
+                                        <span class="file-name">Zadanie 2</span>
+                                        <div class="file-actions">
+                                            <a href="https://prakt.dziadu.dev/desktopy/JS-Obiekty-i-Zdarzenia/zdarzenia/zadanie2/index.html" class="btn-view" target="_blank">Otwórz</a>
+                                            <a href="https://prakt.dziadu.dev/desktopy/JS-Obiekty-i-Zdarzenia/zdarzenia/zadanie2/index.html" class="btn-download-file" download>⬇️</a>
+                                        </div>
+                                    </div>
+                                    <div class="file-item">
+                                        <span class="file-name">Zadanie 3</span>
+                                        <div class="file-actions">
+                                            <a href="https://prakt.dziadu.dev/desktopy/JS-Obiekty-i-Zdarzenia/zdarzenia/zadanie3/index.html" class="btn-view" target="_blank">Otwórz</a>
+                                            <a href="https://prakt.dziadu.dev/desktopy/JS-Obiekty-i-Zdarzenia/zdarzenia/zadanie3/index.html" class="btn-download-file" download>⬇️</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
-                <div class="col-sm-6 col-lg-3">
-                    <a href="informatyka.html" class="main-card text-white text-decoration-none d-flex flex-column align-items-center justify-content-center text-center position-relative rounded-4 p-4" data-tilt>
-                        <div class="card-glow"></div>
-                        <div class="icon mb-3">📚</div>
-                        <h2 class="text-white fs-4 fw-bold m-0">Informatyka</h2>
-                    </a>
-                </div>
+                        <div class="folder-group">
+                            <div class="folder-group-header">
+                                <h3>Na kartkówkę</h3>
+                                <button class="btn-download-subsection" onclick="downloadSubsection('desktopy', 'Na-kartkowke'); event.stopPropagation();">
+                                    <span>📦</span> Pobierz sekcję
+                                </button>
+                            </div>
+                            <div class="files-grid">
+                                <div class="file-item">
+                                    <span class="file-name">Zmienne 1</span>
+                                    <div class="file-actions">
+                                        <a href="https://prakt.dziadu.dev/desktopy/Na%20kartkowke/zmienne1.html" class="btn-view" target="_blank">Otwórz</a>
+                                        <a href="https://prakt.dziadu.dev/desktopy/Na%20kartkowke/zmienne1.html" class="btn-download-file" download>⬇️</a>
+                                    </div>
+                                </div>
+                                <div class="file-item">
+                                    <span class="file-name">Zmienne 2</span>
+                                    <div class="file-actions">
+                                        <a href="https://prakt.dziadu.dev/desktopy/Na%20kartkowke/zmienne2.html" class="btn-view" target="_blank">Otwórz</a>
+                                        <a href="https://prakt.dziadu.dev/desktopy/Na%20kartkowke/zmienne2.html" class="btn-download-file" download>⬇️</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
-                <div class="col-sm-6 col-lg-3">
-                    <a href="TSiAI.html" class="main-card text-white text-decoration-none d-flex flex-column align-items-center justify-content-center text-center position-relative rounded-4 p-4" data-tilt>
-                        <div class="card-glow"></div>
-                        <div class="icon mb-3">🖥️</div>
-                        <h2 class="text-white fs-4 fw-bold m-0">TSiAI</h2>
-                    </a>
-                </div>
+                        <div class="folder-group">
+                            <div class="folder-group-header">
+                                <h3>Funkcje JS</h3>
+                                <button class="btn-download-subsection" onclick="downloadSubsection('desktopy', 'funkcje-JS'); event.stopPropagation();">
+                                    <span>📦</span> Pobierz sekcję
+                                </button>
+                            </div>
+                            <div class="files-grid">
+                                <div class="file-item">
+                                    <span class="file-name">Zadanie 1</span>
+                                    <div class="file-actions">
+                                        <a href="https://prakt.dziadu.dev/desktopy/funkcje%20JS/zad1.html" class="btn-view" target="_blank">Otwórz</a>
+                                        <a href="https://prakt.dziadu.dev/desktopy/funkcje%20JS/zad1.html" class="btn-download-file" download>⬇️</a>
+                                    </div>
+                                </div>
+                                <div class="file-item">
+                                    <span class="file-name">Zadanie 2</span>
+                                    <div class="file-actions">
+                                        <a href="https://prakt.dziadu.dev/desktopy/funkcje%20JS/zad2.html" class="btn-view" target="_blank">Otwórz</a>
+                                        <a href="https://prakt.dziadu.dev/desktopy/funkcje%20JS/zad2.html" class="btn-download-file" download>⬇️</a>
+                                    </div>
+                                </div>
+                                <div class="file-item">
+                                    <span class="file-name">Zadanie 3</span>
+                                    <div class="file-actions">
+                                        <a href="https://prakt.dziadu.dev/desktopy/funkcje%20JS/zad3.html" class="btn-view" target="_blank">Otwórz</a>
+                                        <a href="https://prakt.dziadu.dev/desktopy/funkcje%20JS/zad3.html" class="btn-download-file" download>⬇️</a>
+                                    </div>
+                                </div>
+                                <div class="file-item">
+                                    <span class="file-name">Zadanie 4</span>
+                                    <div class="file-actions">
+                                        <a href="https://prakt.dziadu.dev/desktopy/funkcje%20JS/zad4.html" class="btn-view" target="_blank">Otwórz</a>
+                                        <a href="https://prakt.dziadu.dev/desktopy/funkcje%20JS/zad4.html" class="btn-download-file" download>⬇️</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
-                <div class="col-sm-6 col-lg-3">
-                    <a href="WiAI.html" class="main-card text-white text-decoration-none d-flex flex-column align-items-center justify-content-center text-center position-relative rounded-4 p-4" data-tilt>
-                        <div class="card-glow"></div>
-                        <div class="icon mb-3">🌐</div>
-                        <h2 class="text-white fs-4 fw-bold m-0">WiAI</h2>
-                    </a>
-                </div>
-                 <div class="col-sm-6 col-lg-3">
-                    <a href="opa2.html" class="main-card text-white text-decoration-none d-flex flex-column align-items-center justify-content-center text-center position-relative rounded-4 p-4" data-tilt>
-                        <div class="card-glow"></div>
-                        <div class="icon mb-3">🧬</div>
-                        <h2 class="text-white fs-4 fw-bold m-0">Biologia spr</h2>
-                    </a>
+                        <div class="folder-group">
+                            <div class="folder-group-header">
+                                <h3>Strona piekarnia - egzamin</h3>
+                                <button class="btn-download-subsection" onclick="downloadSubsection('desktopy', 'strona-piekarnia-egzamin'); event.stopPropagation();">
+                                    <span>📦</span> Pobierz sekcję
+                                </button>
+                            </div>
+                            <div class="files-grid">
+                                <div class="file-item">
+                                    <span class="file-name">Strona Piekarnia</span>
+                                    <div class="file-actions">
+                                        <a href="https://prakt.dziadu.dev/desktopy/strona-piekarnia-egzamin/index.html" class="btn-view" target="_blank">Otwórz</a>
+                                        <a href="https://prakt.dziadu.dev/desktopy/strona-piekarnia-egzamin/index.html" class="btn-download-file" download>⬇️</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="folder-group">
+                            <div class="folder-group-header">
+                                <h3>Zadania egzaminacyjne</h3>
+                                <button class="btn-download-subsection" onclick="downloadSubsection('desktopy', 'zadania-egzaminacyjne'); event.stopPropagation();">
+                                    <span>📦</span> Pobierz sekcję
+                                </button>
+                            </div>
+                            <div class="files-grid">
+                                <div class="file-item">
+                                    <span class="file-name">Strona główna zadań</span>
+                                    <div class="file-actions">
+                                        <a href="https://prakt.dziadu.dev/desktopy/zadania%20egzaminacyjne/index.html" class="btn-view" target="_blank">Otwórz</a>
+                                        <a href="https://prakt.dziadu.dev/desktopy/zadania%20egzaminacyjne/index.html" class="btn-download-file" download>⬇️</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="folder-group">
+                            <div class="folder-group-header">
+                                <h3>JS - zadania z których będzie kartkówka</h3>
+                                <button class="btn-download-subsection" onclick="downloadSubsection('desktopy', 'JS-zadania-z-ktorych-bedzie-karkowka'); event.stopPropagation();">
+                                    <span>📦</span> Pobierz sekcję
+                                </button>
+                            </div>
+                            <div class="files-grid">
+                                <div class="file-item">
+                                    <span class="file-name">Zadanie 1</span>
+                                    <div class="file-actions">
+                                        <a href="https://prakt.dziadu.dev/desktopy/JS-zadania-z-ktorych-bedzie-karkowka/zadanie1.html" class="btn-view" target="_blank">Otwórz</a>
+                                        <a href="https://prakt.dziadu.dev/desktopy/JS-zadania-z-ktorych-bedzie-karkowka/zadanie1.html" class="btn-download-file" download>⬇️</a>
+                                    </div>
+                                </div>
+                                <div class="file-item">
+                                    <span class="file-name">Zadanie 2</span>
+                                    <div class="file-actions">
+                                        <a href="https://prakt.dziadu.dev/desktopy/JS-zadania-z-ktorych-bedzie-karkowka/zadanie2.html" class="btn-view" target="_blank">Otwórz</a>
+                                        <a href="https://prakt.dziadu.dev/desktopy/JS-zadania-z-ktorych-bedzie-karkowka/zadanie2.html" class="btn-download-file" download>⬇️</a>
+                                    </div>
+                                </div>
+                                <div class="file-item">
+                                    <span class="file-name">Zadanie 3</span>
+                                    <div class="file-actions">
+                                        <a href="https://prakt.dziadu.dev/desktopy/JS-zadania-z-ktorych-bedzie-karkowka/zadanie3.html" class="btn-view" target="_blank">Otwórz</a>
+                                        <a href="https://prakt.dziadu.dev/desktopy/JS-zadania-z-ktorych-bedzie-karkowka/zadanie3.html" class="btn-download-file" download>⬇️</a>
+                                    </div>
+                                </div>
+                                <div class="file-item">
+                                    <span class="file-name">Zadanie 4</span>
+                                    <div class="file-actions">
+                                        <a href="https://prakt.dziadu.dev/desktopy/JS-zadania-z-ktorych-bedzie-karkowka/zadanie4.html" class="btn-view" target="_blank">Otwórz</a>
+                                        <a href="https://prakt.dziadu.dev/desktopy/JS-zadania-z-ktorych-bedzie-karkowka/zadanie4.html" class="btn-download-file" download>⬇️</a>
+                                    </div>
+                                </div>
+                                <div class="file-item">
+                                    <span class="file-name">Zadanie 5</span>
+                                    <div class="file-actions">
+                                        <a href="https://prakt.dziadu.dev/desktopy/JS-zadania-z-ktorych-bedzie-karkowka/zadanie5.html" class="btn-view" target="_blank">Otwórz</a>
+                                        <a href="https://prakt.dziadu.dev/desktopy/JS-zadania-z-ktorych-bedzie-karkowka/zadanie5.html" class="btn-download-file" download>⬇️</a>
+                                    </div>
+                                </div>
+                                <div class="file-item">
+                                    <span class="file-name">Zadanie 6</span>
+                                    <div class="file-actions">
+                                        <a href="https://prakt.dziadu.dev/desktopy/JS-zadania-z-ktorych-bedzie-karkowka/zadanie6.html" class="btn-view" target="_blank">Otwórz</a>
+                                        <a href="https://prakt.dziadu.dev/desktopy/JS-zadania-z-ktorych-bedzie-karkowka/zadanie6.html" class="btn-download-file" download>⬇️</a>
+                                    </div>
+                                </div>
+                                <div class="file-item">
+                                    <span class="file-name">Zadanie 7</span>
+                                    <div class="file-actions">
+                                        <a href="https://prakt.dziadu.dev/desktopy/JS-zadania-z-ktorych-bedzie-karkowka/zadanie7.html" class="btn-view" target="_blank">Otwórz</a>
+                                        <a href="https://prakt.dziadu.dev/desktopy/JS-zadania-z-ktorych-bedzie-karkowka/zadanie7.html" class="btn-download-file" download>⬇️</a>
+                                    </div>
+                                </div>
+                                <div class="file-item">
+                                    <span class="file-name">Zadanie 8</span>
+                                    <div class="file-actions">
+                                        <a href="https://prakt.dziadu.dev/desktopy/JS-zadania-z-ktorych-bedzie-karkowka/zadanie8.html" class="btn-view" target="_blank">Otwórz</a>
+                                        <a href="https://prakt.dziadu.dev/desktopy/JS-zadania-z-ktorych-bedzie-karkowka/zadanie8.html" class="btn-download-file" download>⬇️</a>
+                                    </div>
+                                </div>
+                                <div class="file-item">
+                                    <span class="file-name">Zadanie 9</span>
+                                    <div class="file-actions">
+                                        <a href="https://prakt.dziadu.dev/desktopy/JS-zadania-z-ktorych-bedzie-karkowka/zadanie9.html" class="btn-view" target="_blank">Otwórz</a>
+                                        <a href="https://prakt.dziadu.dev/desktopy/JS-zadania-z-ktorych-bedzie-karkowka/zadanie9.html" class="btn-download-file" download>⬇️</a>
+                                    </div>
+                                </div>
+                                <div class="file-item">
+                                    <span class="file-name">Zadanie 10</span>
+                                    <div class="file-actions">
+                                        <a href="https://prakt.dziadu.dev/desktopy/JS-zadania-z-ktorych-bedzie-karkowka/zadanie10.html" class="btn-view" target="_blank">Otwórz</a>
+                                        <a href="https://prakt.dziadu.dev/desktopy/JS-zadania-z-ktorych-bedzie-karkowka/zadanie10.html" class="btn-download-file" download>⬇️</a>
+                                    </div>
+                                </div>
+                                <div class="file-item">
+                                    <span class="file-name">Zadanie 11</span>
+                                    <div class="file-actions">
+                                        <a href="https://prakt.dziadu.dev/desktopy/JS-zadania-z-ktorych-bedzie-karkowka/zadanie11.html" class="btn-view" target="_blank">Otwórz</a>
+                                        <a href="https://prakt.dziadu.dev/desktopy/JS-zadania-z-ktorych-bedzie-karkowka/zadanie11.html" class="btn-download-file" download>⬇️</a>
+                                    </div>
+                                </div>
+                                <div class="file-item">
+                                    <span class="file-name">Zadanie 12</span>
+                                    <div class="file-actions">
+                                        <a href="https://prakt.dziadu.dev/desktopy/JS-zadania-z-ktorych-bedzie-karkowka/zadanie12.html" class="btn-view" target="_blank">Otwórz</a>
+                                        <a href="https://prakt.dziadu.dev/desktopy/JS-zadania-z-ktorych-bedzie-karkowka/zadanie12.html" class="btn-download-file" download>⬇️</a>
+                                    </div>
+                                </div>
+                                <div class="file-item">
+                                    <span class="file-name">Zadanie 13</span>
+                                    <div class="file-actions">
+                                        <a href="https://prakt.dziadu.dev/desktopy/JS-zadania-z-ktorych-bedzie-karkowka/zadanie13.html" class="btn-view" target="_blank">Otwórz</a>
+                                        <a href="https://prakt.dziadu.dev/desktopy/JS-zadania-z-ktorych-bedzie-karkowka/zadanie13.html" class="btn-download-file" download>⬇️</a>
+                                    </div>
+                                </div>
+                                <div class="file-item">
+                                    <span class="file-name">Zadanie 14</span>
+                                    <div class="file-actions">
+                                        <a href="https://prakt.dziadu.dev/desktopy/JS-zadania-z-ktorych-bedzie-karkowka/zadanie14.html" class="btn-view" target="_blank">Otwórz</a>
+                                        <a href="https://prakt.dziadu.dev/desktopy/JS-zadania-z-ktorych-bedzie-karkowka/zadanie14.html" class="btn-download-file" download>⬇️</a>
+                                    </div>
+                                </div>
+                                <div class="file-item">
+                                    <span class="file-name">Zadanie 15</span>
+                                    <div class="file-actions">
+                                        <a href="https://prakt.dziadu.dev/desktopy/JS-zadania-z-ktorych-bedzie-karkowka/zadanie15.html" class="btn-view" target="_blank">Otwórz</a>
+                                        <a href="https://prakt.dziadu.dev/desktopy/JS-zadania-z-ktorych-bedzie-karkowka/zadanie15.html" class="btn-download-file" download>⬇️</a>
+                                    </div>
+                                </div>
+                                <div class="file-item">
+                                    <span class="file-name">Zadanie 16</span>
+                                    <div class="file-actions">
+                                        <a href="https://prakt.dziadu.dev/desktopy/JS-zadania-z-ktorych-bedzie-karkowka/zadanie16.html" class="btn-view" target="_blank">Otwórz</a>
+                                        <a href="https://prakt.dziadu.dev/desktopy/JS-zadania-z-ktorych-bedzie-karkowka/zadanie16.html" class="btn-download-file" download>⬇️</a>
+                                    </div>
+                                </div>
+                                <div class="file-item">
+                                    <span class="file-name">Zadanie 17</span>
+                                    <div class="file-actions">
+                                        <a href="https://prakt.dziadu.dev/desktopy/JS-zadania-z-ktorych-bedzie-karkowka/zadanie17.html" class="btn-view" target="_blank">Otwórz</a>
+                                        <a href="https://prakt.dziadu.dev/desktopy/JS-zadania-z-ktorych-bedzie-karkowka/zadanie17.html" class="btn-download-file" download>⬇️</a>
+                                    </div>
+                                </div>
+                                <div class="file-item">
+                                    <span class="file-name">Zadanie 18</span>
+                                    <div class="file-actions">
+                                        <a href="https://prakt.dziadu.dev/desktopy/JS-zadania-z-ktorych-bedzie-karkowka/zadanie18.html" class="btn-view" target="_blank">Otwórz</a>
+                                        <a href="https://prakt.dziadu.dev/desktopy/JS-zadania-z-ktorych-bedzie-karkowka/zadanie18.html" class="btn-download-file" download>⬇️</a>
+                                    </div>
+                                </div>
+                                <div class="file-item">
+                                    <span class="file-name">Zadanie 19</span>
+                                    <div class="file-actions">
+                                        <a href="https://prakt.dziadu.dev/desktopy/JS-zadania-z-ktorych-bedzie-karkowka/zadanie19.html" class="btn-view" target="_blank">Otwórz</a>
+                                        <a href="https://prakt.dziadu.dev/desktopy/JS-zadania-z-ktorych-bedzie-karkowka/zadanie19.html" class="btn-download-file" download>⬇️</a>
+                                    </div>
+                                </div>
+                                <div class="file-item">
+                                    <span class="file-name">Zadanie 20</span>
+                                    <div class="file-actions">
+                                        <a href="https://prakt.dziadu.dev/desktopy/JS-zadania-z-ktorych-bedzie-karkowka/zadanie20.html" class="btn-view" target="_blank">Otwórz</a>
+                                        <a href="https://prakt.dziadu.dev/desktopy/JS-zadania-z-ktorych-bedzie-karkowka/zadanie20.html" class="btn-download-file" download>⬇️</a>
+                                    </div>
+                                </div>
+                                <div class="file-item">
+                                    <span class="file-name">Zadanie 21</span>
+                                    <div class="file-actions">
+                                        <a href="https://prakt.dziadu.dev/desktopy/JS-zadania-z-ktorych-bedzie-karkowka/zadanie21.html" class="btn-view" target="_blank">Otwórz</a>
+                                        <a href="https://prakt.dziadu.dev/desktopy/JS-zadania-z-ktorych-bedzie-karkowka/zadanie21.html" class="btn-download-file" download>⬇️</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <footer class="text-center mt-5 pt-4 border-top border-secondary text-white-50">
-                <p class="mb-2">© 2025 <a href="https://dziadu.dev" class="text-decoration-none text-white-50 hover-accent">dziadu.dev</a></p>
-                <p class="small mb-0">Ostatnia aktualizacja: <span id="lastUpdate">05.11.2025</span></p>
-            </footer>
+
+            <!-- Informatyka -->
+            <div class="subject-section">
+                <div class="subject-header" data-bs-toggle="collapse" data-bs-target="#informatyka">
+                    <div class="subject-info">
+                        <span class="subject-icon">📊</span>
+                        <div>
+                            <h2 class="subject-title">Informatyka</h2>
+                            <p class="subject-desc">Algorytmy i struktury danych</p>
+                        </div>
+                    </div>
+                    <div class="header-actions">
+                        <button class="btn-download" onclick="downloadFolder('informatyka'); event.stopPropagation();">
+                            <span>📦</span> Pobierz całość
+                        </button>
+                        <span class="collapse-icon">▼</span>
+                    </div>
+                </div>
+                <div class="collapse" id="informatyka">
+                    <div class="subject-content">
+                        <div class="folder-group">
+                            <div class="folder-group-header">
+                                <h3>Szukanie liczby</h3>
+                                <button class="btn-download-subsection" onclick="downloadSubsection('informatyka', 'Szukanie-liczby'); event.stopPropagation();">
+                                    <span>📦</span> Pobierz sekcję
+                                </button>
+                            </div>
+                            <div class="files-grid">
+                                <div class="file-item">
+                                    <span class="file-name">Zadanie 1 - Przeszukiwanie liniowe</span>
+                                    <div class="file-actions">
+                                        <a href="https://prakt.dziadu.dev/informatyka/Szukanie-liczby/zadanie1.py" class="btn-view" target="_blank">Otwórz</a>
+                                        <a href="https://prakt.dziadu.dev/informatyka/Szukanie-liczby/zadanie1.py" class="btn-download-file" download>⬇️</a>
+                                    </div>
+                                </div>
+                                <div class="file-item">
+                                    <span class="file-name">Zadanie 2 - Wyszukiwanie binarne</span>
+                                    <div class="file-actions">
+                                        <a href="https://prakt.dziadu.dev/informatyka/Szukanie-liczby/zadanie2.py" class="btn-view" target="_blank">Otwórz</a>
+                                        <a href="https://prakt.dziadu.dev/informatyka/Szukanie-liczby/zadanie2.py" class="btn-download-file" download>⬇️</a>
+                                    </div>
+                                </div>
+                                <div class="file-item">
+                                    <span class="file-name">Zadanie 3 - Min i Max</span>
+                                    <div class="file-actions">
+                                        <a href="https://prakt.dziadu.dev/informatyka/Szukanie-liczby/zadanie3.py" class="btn-view" target="_blank">Otwórz</a>
+                                        <a href="https://prakt.dziadu.dev/informatyka/Szukanie-liczby/zadanie3.py" class="btn-download-file" download>⬇️</a>
+                                    </div>
+                                </div>
+                                <div class="file-item">
+                                    <span class="file-name">Zadanie 4 - Suma cyfr</span>
+                                    <div class="file-actions">
+                                        <a href="https://prakt.dziadu.dev/informatyka/Szukanie-liczby/zadanie4.py" class="btn-view" target="_blank">Otwórz</a>
+                                        <a href="https://prakt.dziadu.dev/informatyka/Szukanie-liczby/zadanie4.py" class="btn-download-file" download>⬇️</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="folder-group">
+                            <div class="folder-group-header">
+                                <h3>Sortowanie bąbelkowe</h3>
+                                <button class="btn-download-subsection" onclick="downloadSubsection('informatyka', 'Sortowanie-bombelkowe'); event.stopPropagation();">
+                                    <span>📦</span> Pobierz sekcję
+                                </button>
+                            </div>
+                            <div class="files-grid">
+                                <div class="file-item">
+                                    <span class="file-name">Zadanie 1 - Sortowanie rosnące</span>
+                                    <div class="file-actions">
+                                        <a href="https://prakt.dziadu.dev/informatyka/Sortowanie-bombelkowe/zadanie1.py" class="btn-view" target="_blank">Otwórz</a>
+                                        <a href="https://prakt.dziadu.dev/informatyka/Sortowanie-bombelkowe/zadanie1.py" class="btn-download-file" download>⬇️</a>
+                                    </div>
+                                </div>
+                                <div class="file-item">
+                                    <span class="file-name">Zadanie 2 - Sortowanie malejące</span>
+                                    <div class="file-actions">
+                                        <a href="https://prakt.dziadu.dev/informatyka/Sortowanie-bombelkowe/zadanie2.py" class="btn-view" target="_blank">Otwórz</a>
+                                        <a href="https://prakt.dziadu.dev/informatyka/Sortowanie-bombelkowe/zadanie2.py" class="btn-download-file" download>⬇️</a>
+                                    </div>
+                                </div>
+                                <div class="file-item">
+                                    <span class="file-name">Zadanie 3 - Top 3</span>
+                                    <div class="file-actions">
+                                        <a href="https://prakt.dziadu.dev/informatyka/Sortowanie-bombelkowe/zadanie3.py" class="btn-view" target="_blank">Otwórz</a>
+                                        <a href="https://prakt.dziadu.dev/informatyka/Sortowanie-bombelkowe/zadanie3.py" class="btn-download-file" download>⬇️</a>
+                                    </div>
+                                </div>
+                                <div class="file-item">
+                                    <span class="file-name">Zadanie 4 - Sortowanie słów</span>
+                                    <div class="file-actions">
+                                        <a href="https://prakt.dziadu.dev/informatyka/Sortowanie-bombelkowe/zadanie4.py" class="btn-view" target="_blank">Otwórz</a>
+                                        <a href="https://prakt.dziadu.dev/informatyka/Sortowanie-bombelkowe/zadanie4.py" class="btn-download-file" download>⬇️</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TSiAI -->
+            <div class="subject-section">
+                <div class="subject-header" data-bs-toggle="collapse" data-bs-target="#tsiai">
+                    <div class="subject-info">
+                        <span class="subject-icon">🎨</span>
+                        <div>
+                            <h2 class="subject-title">TSiAI</h2>
+                            <p class="subject-desc">Bootstrap i tworzenie stron</p>
+                        </div>
+                    </div>
+                    <div class="header-actions">
+                        <button class="btn-download" onclick="downloadFolder('TSiAI'); event.stopPropagation();">
+                            <span>📦</span> Pobierz całość
+                        </button>
+                        <span class="collapse-icon">▼</span>
+                    </div>
+                </div>
+                <div class="collapse" id="tsiai">
+                    <div class="subject-content">
+                        <div class="folder-group">
+                            <div class="folder-group-header">
+                                <h3>Bootstrap</h3>
+                                <button class="btn-download-subsection" onclick="downloadSubsection('TSiAI', 'bootstrap'); event.stopPropagation();">
+                                    <span>📦</span> Pobierz sekcję
+                                </button>
+                            </div>
+                            <div class="files-grid">
+                                <div class="file-item">
+                                    <span class="file-name">Strona główna</span>
+                                    <div class="file-actions">
+                                        <a href="https://prakt.dziadu.dev/TSiAI/bootstrap/index.html" class="btn-view" target="_blank">Otwórz</a>
+                                        <a href="https://prakt.dziadu.dev/TSiAI/bootstrap/index.html" class="btn-download-file" download>⬇️</a>
+                                    </div>
+                                </div>
+                                <div class="file-item">
+                                    <span class="file-name">Szablon</span>
+                                    <div class="file-actions">
+                                        <a href="https://prakt.dziadu.dev/TSiAI/bootstrap/szablon/szablon/index.html" class="btn-view" target="_blank">Otwórz</a>
+                                        <a href="https://prakt.dziadu.dev/TSiAI/bootstrap/szablon/szablon/index.html" class="btn-download-file" download>⬇️</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- WiAI -->
+            <div class="subject-section">
+                <div class="subject-header" data-bs-toggle="collapse" data-bs-target="#wiai">
+                    <div class="subject-info">
+                        <span class="subject-icon">🌊</span>
+                        <div>
+                            <h2 class="subject-title">WiAI</h2>
+                            <p class="subject-desc">Animacje CSS i formularze</p>
+                        </div>
+                    </div>
+                    <div class="header-actions">
+                        <button class="btn-download" onclick="downloadFolder('WiAI'); event.stopPropagation();">
+                            <span>📦</span> Pobierz całość
+                        </button>
+                        <span class="collapse-icon">▼</span>
+                    </div>
+                </div>
+                <div class="collapse" id="wiai">
+                    <div class="subject-content">
+                        <div class="folder-group">
+                            <div class="folder-group-header">
+                                <h3>Animacje</h3>
+                                <button class="btn-download-subsection" onclick="downloadSubsection('WiAI', 'animacje'); event.stopPropagation();">
+                                    <span>📦</span> Pobierz sekcję
+                                </button>
+                            </div>
+                            <div class="files-grid">
+                                <div class="file-item">
+                                    <span class="file-name">Zadanie 1</span>
+                                    <div class="file-actions">
+                                        <a href="https://prakt.dziadu.dev/WiAI/animacje/zadanie1/zadanie1/index.html" class="btn-view" target="_blank">Otwórz</a>
+                                        <a href="https://prakt.dziadu.dev/WiAI/animacje/zadanie1/zadanie1/index.html" class="btn-download-file" download>⬇️</a>
+                                    </div>
+                                </div>
+                                <div class="file-item">
+                                    <span class="file-name">Zadanie 2</span>
+                                    <div class="file-actions">
+                                        <a href="https://prakt.dziadu.dev/WiAI/animacje/zadanie2/zadanie2/index.html" class="btn-view" target="_blank">Otwórz</a>
+                                        <a href="https://prakt.dziadu.dev/WiAI/animacje/zadanie2/zadanie2/index.html" class="btn-download-file" download>⬇️</a>
+                                    </div>
+                                </div>
+                                <div class="file-item">
+                                    <span class="file-name">Zadanie 3</span>
+                                    <div class="file-actions">
+                                        <a href="https://prakt.dziadu.dev/WiAI/animacje/zadanie3/zadanie3/index.html" class="btn-view" target="_blank">Otwórz</a>
+                                        <a href="https://prakt.dziadu.dev/WiAI/animacje/zadanie3/zadanie3/index.html" class="btn-download-file" download>⬇️</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="folder-group">
+                            <div class="folder-group-header">
+                                <h3>Formularz</h3>
+                                <button class="btn-download-subsection" onclick="downloadSubsection('WiAI', 'formularz'); event.stopPropagation();">
+                                    <span>📦</span> Pobierz sekcję
+                                </button>
+                            </div>
+                            <div class="files-grid">
+                                <div class="file-item">
+                                    <span class="file-name">Formularz HTML/CSS</span>
+                                    <div class="file-actions">
+                                        <a href="https://prakt.dziadu.dev/WiAI/formularz/index.html" class="btn-view" target="_blank">Otwórz</a>
+                                        <a href="https://prakt.dziadu.dev/WiAI/formularz/index.html" class="btn-download-file" download>⬇️</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Biologia -->
+            <div class="subject-section">
+                <div class="subject-header" data-bs-toggle="collapse" data-bs-target="#biologia">
+                    <div class="subject-info">
+                        <span class="subject-icon">🧬</span>
+                        <div>
+                            <h2 class="subject-title">Biologia</h2>
+                            <p class="subject-desc">Sprawdzian - Prawa Mendla</p>
+                        </div>
+                    </div>
+                    <div class="header-actions">
+                        <a href="opa2.html" class="btn-download" onclick="event.stopPropagation();">
+                            <span>📄</span> Otwórz
+                        </a>
+                        <span class="collapse-icon">▼</span>
+                    </div>
+                </div>
+                <div class="collapse" id="biologia">
+                    <div class="subject-content">
+                        <div class="folder-group">
+                            <div class="files-grid">
+                                <div class="file-item">
+                                    <span class="file-name">Sprawdzian - Prawa Mendla</span>
+                                    <div class="file-actions">
+                                        <a href="opa2.html" class="btn-view" target="_blank">Otwórz</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    
-    <button id="scrollToTop" class="btn position-fixed bottom-0 end-0 m-4 rounded-circle p-3 d-none" style="width:50px;height:50px;z-index:1000" aria-label="Przewiń do góry">
-        ⬆️
-    </button>
-    
-    <script src="js/bootstrap.bundle.min.js" defer></script>
-    <script src="js/script.js" defer></script>
+    </div>
+
+    <footer class="page-footer">
+        <div class="container">
+            <p>© 2025 <a href="https://dziadu.dev" target="_blank">dziadu.dev</a></p>
+        </div>
+    </footer>
+
+    <button id="scrollToTop" class="scroll-btn">↑</button>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        function downloadFolder(folderName) {
+            alert('Przygotowuję archiwum całego przedmiotu: ' + folderName + '\n\nFunkcja wymaga konfiguracji serwera dla pełnej obsługi.');
+        }
+
+        function downloadSubsection(subject, subsection) {
+            alert('Przygotowuję archiwum sekcji: ' + subject + '/' + subsection + '\n\nFunkcja wymaga konfiguracji serwera dla pełnej obsługi.');
+        }
+
+        // Animacja collapse icon
+        document.querySelectorAll('[data-bs-toggle="collapse"]').forEach(trigger => {
+            trigger.addEventListener('click', function() {
+                const icon = this.querySelector('.collapse-icon');
+                const target = document.querySelector(this.dataset.bsTarget);
+                
+                target.addEventListener('shown.bs.collapse', () => {
+                    icon.style.transform = 'rotate(180deg)';
+                });
+                
+                target.addEventListener('hidden.bs.collapse', () => {
+                    icon.style.transform = 'rotate(0deg)';
+                });
+            });
+        });
+    </script>
 </body>
 </html>
